@@ -12,15 +12,15 @@ export default () => (
     </strong>
 
     <div className="Cards">
-      <Card titulo="Exercicio #04 - Desafio Aleatório">
+      <Card titulo="Exercicio #04 - Desafio Aleatório" color="#080">
         <Aleatorio min={1} max={100}></Aleatorio>
       </Card>
 
-      <Card titulo="Exercicio #03 - fragmento">
+      <Card titulo="Exercicio #03 - fragmento" color="#E94C6F">
         <Fragmento></Fragmento>
       </Card>
 
-      <Card titulo="Exercicio #02 - Com Parâmetro">
+      <Card titulo="Exercicio #02 - Com Parâmetro" color="#E8B71A">
         <ComParametro
           titulo="situação do aluno"
           NomeDoAluno="Julio"
@@ -28,7 +28,7 @@ export default () => (
         ></ComParametro>
       </Card>
 
-      <Card titulo="Exercicio #01 - Primeiro component">
+      <Card titulo="Exercicio #01 - Primeiro component" color="#588C73">
         <Primeiro></Primeiro>
       </Card>
 
