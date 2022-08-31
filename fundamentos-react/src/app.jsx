@@ -1,6 +1,9 @@
 import React from "react";
-import "./App.css"
+import "./App.css";
 import Card from "./components/layout/Card";
+import ListaAlunos from "./components/Repetição/ListaAlunos";
+import FamiliaMembro from "./components/basicos/FamiliaMembro";
+import Familia from "./components/basicos/Familia";
 import Aleatorio from "./components/basicos/Aleatorio";
 import ComParametro from "./components/basicos/ComParametro";
 import Fragmento from "./components/basicos/Fragmento";
@@ -12,6 +15,18 @@ export default () => (
     </strong>
 
     <div className="Cards">
+      <Card titulo="Exercicio #06 - Repetição" color="#00c8f8">
+        
+        <ListaAlunos></ListaAlunos>
+      </Card>
+      <Card titulo="Exercicio #05 - Component com children" color="#00c8f8">
+        
+        <Familia sobrenome="Torres"></Familia>
+        <FamiliaMembro nome="Demerson"></FamiliaMembro>
+        <FamiliaMembro nome="Cintia"></FamiliaMembro>
+        <FamiliaMembro nome="Sophia"></FamiliaMembro>
+      </Card>
+
       <Card titulo="Exercicio #04 - Desafio Aleatório" color="#080">
         <Aleatorio min={1} max={100}></Aleatorio>
       </Card>
@@ -31,7 +46,6 @@ export default () => (
       <Card titulo="Exercicio #01 - Primeiro component" color="#588C73">
         <Primeiro></Primeiro>
       </Card>
-
     </div>
   </div>
 );
