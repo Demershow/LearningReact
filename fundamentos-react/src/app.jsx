@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import TabelaProdutos from "./components/Repetição/tabelaProdutos";
 import Card from "./components/layout/Card";
 import ListaAlunos from "./components/Repetição/ListaAlunos";
 import FamiliaMembro from "./components/basicos/FamiliaMembro";
@@ -9,18 +10,23 @@ import ComParametro from "./components/basicos/ComParametro";
 import Fragmento from "./components/basicos/Fragmento";
 import Primeiro from "./components/basicos/Primeiro";
 export default () => (
+  
   <div className="App">
     <strong>
       <h1>Fundamentos React</h1>
     </strong>
-
+   
     <div className="Cards">
+      <Card titulo="Exercicio #07 - Repetição Produtos" color="#00c8f8">
+      <TabelaProdutos></TabelaProdutos>
+
+      </Card>
       <Card titulo="Exercicio #06 - Repetição" color="#00c8f8">
-        
         <ListaAlunos></ListaAlunos>
       </Card>
-      <Card titulo="Exercicio #05 - Component com children" color="#00c8f8">
-        
+
+
+       <Card titulo="Exercicio #05 - Component com children" color="#00c8f8">
         <Familia sobrenome="Torres"></Familia>
         <FamiliaMembro nome="Demerson"></FamiliaMembro>
         <FamiliaMembro nome="Cintia"></FamiliaMembro>
