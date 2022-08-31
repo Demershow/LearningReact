@@ -1,5 +1,7 @@
 import React from "react";
 import "./App.css";
+import UsuarioInfo from "./components/Condicional/UsuarioInfo";
+import ParOuImpar from "./components/Condicional/ParOuImpar";
 import TabelaProdutos from "./components/Repetição/tabelaProdutos";
 import Card from "./components/layout/Card";
 import ListaAlunos from "./components/Repetição/ListaAlunos";
@@ -10,18 +12,24 @@ import ComParametro from "./components/basicos/ComParametro";
 import Fragmento from "./components/basicos/Fragmento";
 import Primeiro from "./components/basicos/Primeiro";
 export default () => (
-  
+
   <div className="App">
     <strong>
       <h1>Fundamentos React</h1>
     </strong>
    
     <div className="Cards">
-      <Card titulo="Exercicio #07 - Repetição Produtos" color="#00c8f8">
-      <TabelaProdutos></TabelaProdutos>
-
+      <Card titulo="Exercicio #08 - Par ou Impar?" color="#982395">
+      <ParOuImpar  numero={90}></ParOuImpar>
+      <UsuarioInfo usuario={{nome: 'Demerson!'}}></UsuarioInfo>
+      {/* <UsuarioInfo usuario={{email: 'dmr@gmail.com'}}></UsuarioInfo> */}
       </Card>
-      <Card titulo="Exercicio #06 - Repetição" color="#00c8f8">
+
+      <Card titulo="Exercicio #07 - Repetição Produtos" color="#3a9ad9">
+      <TabelaProdutos></TabelaProdutos>
+      </Card>
+
+      <Card titulo="Exercicio #06 - Repetição" color="#ff4c65">
         <ListaAlunos></ListaAlunos>
       </Card>
 
