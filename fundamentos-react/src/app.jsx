@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import Contador from "./components/Contador/contador";
 import Input from "./components/formulario/input";
 import DiretaPai from "./components/Comunicação/DiretaPai";
 import UsuarioInfo from "./components/Condicional/UsuarioInfo";
@@ -21,7 +22,11 @@ export default () => (
     </strong>
 
     <div className="Cards">
-      <Card titulo="Exercicio #11 - Comunicação indireta" color="#e45f56">
+      <Card titulo="Exercicio #12 - Contador" color="#ccc">
+        <Contador numeroInicial={15}></Contador>
+      </Card>
+
+      <Card titulo="Exercicio #11 - Componente controlado" color="#e45f56">
         <Input></Input>
       </Card>
 
