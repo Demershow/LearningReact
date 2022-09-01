@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import Mega from "./components/mega/mega";
 import Contador from "./components/Contador/contador";
 import Input from "./components/formulario/input";
 import DiretaPai from "./components/Comunicação/DiretaPai";
@@ -22,6 +23,10 @@ export default () => (
     </strong>
 
     <div className="Cards">
+      <Card titulo="Exercicio #13 - Mega" color="#ccc">
+        <Mega></Mega>
+      </Card>
+
       <Card titulo="Exercicio #12 - Contador" color="#ccc">
         <Contador numeroInicial={15}></Contador>
       </Card>
@@ -39,7 +44,7 @@ export default () => (
       </Card>
 
       <Card titulo="Exercicio #08 - Par ou Impar/Welcome?" color="#982395">
-        <ParOuImpar numero={90}></ParOuImpar>
+        <ParOuImpar numero={51}></ParOuImpar>
         <UsuarioInfo usuario={{ nome: "Demerson!" }}></UsuarioInfo>
         {/* <UsuarioInfo usuario={{email: 'dmr@gmail.com'}}></UsuarioInfo> */}
       </Card>
