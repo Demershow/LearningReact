@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import Input from "./components/formulario/input";
 import DiretaPai from "./components/Comunicação/DiretaPai";
 import UsuarioInfo from "./components/Condicional/UsuarioInfo";
 import ParOuImpar from "./components/Condicional/ParOuImpar";
@@ -12,7 +13,7 @@ import Aleatorio from "./components/basicos/Aleatorio";
 import ComParametro from "./components/basicos/ComParametro";
 import Fragmento from "./components/basicos/Fragmento";
 import Primeiro from "./components/basicos/Primeiro";
-import IndiretaPai from "./components/Comunicação/IndiretaPai"
+import IndiretaPai from "./components/Comunicação/IndiretaPai";
 export default () => (
   <div className="App">
     <strong>
@@ -20,7 +21,11 @@ export default () => (
     </strong>
 
     <div className="Cards">
-      <Card titulo="Exercicio #09 - Comunicação direta" color="#3a9ad9">
+      <Card titulo="Exercicio #11 - Comunicação indireta" color="#e45f56">
+        <Input></Input>
+      </Card>
+
+      <Card titulo="Exercicio #10 - Comunicação indireta" color="#3a9ad9">
         <IndiretaPai></IndiretaPai>
       </Card>
 
