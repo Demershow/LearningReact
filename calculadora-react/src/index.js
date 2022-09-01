@@ -10,7 +10,6 @@ root.render(
 <div className="body">
     <h1>Calculator</h1>
     <Calculator />
-
 </div>
 );
 
