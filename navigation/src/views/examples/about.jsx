@@ -4,7 +4,7 @@ import React from "react";
 const About = props => (
     <div className="About">
         <h1>About</h1>
-        <p>o nosso aidnasjidniuasdnua</p>
+        <h2>o nosso aidnasjidniuasdnua</h2>
 
     </div>
 )
