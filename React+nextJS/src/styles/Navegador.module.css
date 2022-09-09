@@ -1,0 +1,8 @@
+.Texto{
+    padding: 30px;
+    margin: 10px;
+    background-color: #000;
+    color : #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+}
