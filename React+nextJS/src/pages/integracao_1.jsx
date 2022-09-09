@@ -2,7 +2,7 @@ import { useState } from "react"
 import Layout from "../components/Layout"
 
 
-export default function integracao(){
+export default function Integracao(){
 
     const [codigo, setCodigo] = useState(1)
     const [cliente, setCliente] = useState({})

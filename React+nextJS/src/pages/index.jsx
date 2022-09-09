@@ -15,6 +15,7 @@ export default function Inicio() {
         <Navegador destino='/Cliente/sp-leste/123' texto="Navegação Dinamica" cor="#DAA520" ></Navegador>
         <Navegador destino='/estado' texto="Componente com estado" cor="#898989" ></Navegador>
         <Navegador destino='/integracao_1' texto="Integração com API" cor="brown" ></Navegador>
+        <Navegador destino='/preRender' texto="Pré render na pratica" cor="#fa054a" ></Navegador>
     </div>
   );
 }
