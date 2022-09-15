@@ -14,10 +14,10 @@ export default class Todo extends Component {
 
     this.handleChange = this.handleChange.bind(this);
     this.handleAdd = this.handleAdd.bind(this);
-
     this.handleRemove = this.handleRemove.bind(this);
-    this.handleMarkAsPending = this.handleMarkAsPending(this);
-    this.handleMarkAsDone = this.handleMarkAsDone(this);
+
+    this.handleMarkAsDone = this.handleMarkAsDone.bind(this);
+    this.handleMarkAsPending = this.handleMarkAsPending.bind(this);
     this.refresh();
   }
 
@@ -34,11 +34,12 @@ export default class Todo extends Component {
   }
 
   handleRemove(todo) {
-    Axios.delete(`${URL}/${todo._id}`).then((resp) => this.refresh());
+    Axios.delete(`${URL}/${todo._id}`)
+    .then(resp => this.refresh())
   }
 
   refresh() {
-    Axios.get(`${URL}?sort=createdAt`).then((resp) =>
+    Axios.get(`${URL}?sort=-createdAt`).then((resp) =>
       this.setState({ ...this.state, description: "", list: resp.data })
     );
   }
@@ -47,10 +48,11 @@ export default class Todo extends Component {
     this.setState({ ...this.state, description: e.target.value });
   }
 
-  handleAdd(todo) {
+  handleAdd() {
     const description = this.state.description;
     Axios.post(URL, { description }).then((resp) => this.refresh());
-    console.log(todo.id)
+   
+
   }
   render() {
     return (
