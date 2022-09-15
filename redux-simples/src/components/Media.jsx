@@ -1,8 +1,8 @@
-import "./intervalo.css";
+
 import React from "react";
 import Card from "./card";
 
-export default (props) => {
+const Media = (props) => {
   return (
     <Card title="Média dos números" blue>
       <div>
@@ -14,3 +14,5 @@ export default (props) => {
     </Card>
   );
 };
+
+export default Media
