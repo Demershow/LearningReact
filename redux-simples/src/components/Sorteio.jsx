@@ -12,7 +12,7 @@ function Sorteio (props) {
       <div>
         <span>
           <span>Resultado: </span>
-          <strong>{Math.random() * (max - min) + min}</strong>
+          <strong>{parseInt(Math.random() * (max - min) + min)}</strong>
         </span>
       </div>
     </Card>
