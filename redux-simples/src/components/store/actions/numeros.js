@@ -1,12 +1,17 @@
+import {
+    NumeroMaximoAlterado,
+    NumeroMinimoAlterado
+} from './actionType'
+
 export function alterarNumeroMinimo(novoNumero) {
     return {
-        type: 'NumeroMinimoAlterado',
+        type: NumeroMinimoAlterado,
         payload: novoNumero
     }
 }
 export function alterarNumeroMaximo(novoNumero) {
     return {
-        type: 'NumeroMaximoAlterado',
+        type: NumeroMaximoAlterado,
         payload: novoNumero
     }
 }
