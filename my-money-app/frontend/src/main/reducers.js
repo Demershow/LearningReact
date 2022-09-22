@@ -3,10 +3,12 @@ import dashboardReducer from "../dashboard/dashboardReducer";
 import TabReducer from "../common/tab/TabReducer";
 import BillingCycleReducer from "../billingCycle/BillingCycleReducer";
 
+
 const rootReducer = combineReducers({
     dashboard: dashboardReducer,
     tab: TabReducer,
-    billingCycle: BillingCycleReducer
+    billingCycle: BillingCycleReducer,
+    
 })
 
 
