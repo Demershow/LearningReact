@@ -1,10 +1,17 @@
-import Axios from "axios";
-const BASE_URL = "http://localhost:3003/api";
+import axios from "axios";
+const BASE_URL = "http://localhost:3000/api";
 
 export function getList() {
-  const request = Axios.get(`${BASE_URL}/billingCycles`);
+  const request = axios.get(`${BASE_URL}/billingCycles`);
   return {
     type: "BILLING_CYCLES_FETCHED",
-    payload: request
+    payload: request,
+  };
+}
+
+export function create(values) {
+  axios.post(`${BASE_URL}/billingCycles`, values);
+  return {
+    type: "TEMP",
   };
 }
