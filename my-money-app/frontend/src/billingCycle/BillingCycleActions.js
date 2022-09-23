@@ -44,6 +44,18 @@ export function showUpdate(billingCycle) {
     initialize("billingCycleForm", billingCycle),
   ];
 }
+export function remove (values) {
+  return submit (values, 'delete')
+}
+export function showDelete(billingCycle) {
+  return [
+    showTabs("tabDelete"),
+    selectTab("tabDelete"),
+    initialize("billingCycleForm", billingCycle),
+  ];
+}
+
+    
 export function init () {
   return [
     showTabs("tabList", "tabCreate"),
