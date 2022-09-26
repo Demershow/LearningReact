@@ -15,6 +15,8 @@ module.exports = function(server) {
 
     const AuthService = require('../api/user/authService');
     opneApi.post('/login', AuthService.login);
+    opneApi.post('/signup', AuthService.signup);
+    opneApi.post('/validateToken', AuthService.validateToken);
+};
 
 
-}
