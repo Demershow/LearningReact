@@ -1,11 +1,20 @@
 const express = require('express');
+const auth = require('./auth');
 
 module.exports = function(server) {
-    // API Routes
-    const router = express.Router();
-    server.use('/api', router);
+    const protectedApi = express.Router();
+    server.use('/api', protectedApi);
 
-    // BillingCycle Routes
-    const billingCycleService = require('../api/billingCycle/billingCycleService');
-    billingCycleService.register(router, '/billingCycles'); 
+    protectedApi.use(auth);
+
+    const BillingCycle = require('../api/billingCycle/billingCycleService');
+    BillingCycle.register(protectedApi, '/billingCycles');
+
+    const opneApi = express.Router();
+    server.use('/oapi', opneApi);
+
+    const AuthService = require('../api/user/authService');
+    opneApi.post('/login', AuthService.login);
+
+
 }
