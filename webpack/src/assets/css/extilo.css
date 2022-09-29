@@ -1,3 +1,7 @@
 body {
     background-color: #3d3d3d;
+    background-image: url('../img/fcc5309471e5f0a9e320955491b1a294.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
 }
